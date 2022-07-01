@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className='nav'>
       <div className='logo'>
         <Link to="/">
-            <img id="logoImage" src={logo} alt="Not" />
+            <img id="logoImage" src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg" alt="Not" />
         </Link>
       </div>
 

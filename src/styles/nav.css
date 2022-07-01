@@ -9,6 +9,25 @@
     border-bottom: 1px solid rgba(43, 43, 43, 0.137);
 }
 .navlinks{
-    background-color: brown;
-    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(59, 59, 59);
+    text-decoration:none;
+    margin: 1vmax 1.2vmax;
+    font-size: 1.2vmax;
+    font-weight: 8000;
+
+}
+.logo{
+    background-color:blue;
+    width: 58px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    right: 2vmax;
+}
+
+.searchbox{
+    position: relative;
+
 }
