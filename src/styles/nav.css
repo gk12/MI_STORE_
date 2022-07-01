@@ -18,7 +18,7 @@
 
 }
 .logo{
-    background-color:blue;
+    background-color:rgb(255, 60, 0);
     width: 58px;
     overflow: hidden;
     cursor: pointer;
@@ -27,7 +27,31 @@
     right: 2vmax;
 }
 
+#logoImage{
+    transition:all 0.2s;
+    
+    transform: translateX(-54px);
+}
+
+.navlinks:hover{
+    color: orangered;
+    text-decoration: none;
+}
+
 .searchbox{
     position: relative;
+    left: 6vmax;
 
+}
+.searchbox > input{
+    border: none;
+    border-bottom: 2px solid rgb(196, 176, 176);
+    width: 15vmax;
+    font-size: 1.1vmax;
+    outline: none;
+    color:rgb(61, 61, 61);
+    font-weight: 100;
+}
+.searchbox > svg{
+    fill: rgb(61, 61, 61);
 }
