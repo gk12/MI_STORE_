@@ -3,18 +3,19 @@ import PreNavbar from './components/PreNavbar';
 import Navbar from './components/Navbar.js';
 import {BrowserRouter as Router} from 'react-router-dom'
 import Slider from "./components/Slider.js"
-import {default as banner} from './data/data.json'
+import data from "./data/data.json"
+import Banner from './components/Banner.js'
 function App() {
   return (
-    <>
+    
 
     <Router>
       <PreNavbar/>
       <Navbar/>
-      <Slider start={banner.start}/>
+      <Slider start={data.banner.start}/>
     </Router>
     
-    </>
+    
   );
 }
 
