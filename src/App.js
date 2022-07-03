@@ -8,6 +8,8 @@ import Banner from './components/Banner.js';
 import Offers from './components/Offers.js';
 import Heading from './components/Heading.js'
 import StarProduct from './components/StartProduct.js';
+import HotAccessoriesMenu  from "./components/HotAccessoriesMenu.js"
+
 function App() {
   return (
     
@@ -21,6 +23,8 @@ function App() {
       <StarProduct starProduct={data.starProduct}/>
 
       <Heading text="HOT ACCESSORIES"/>
+      <HotAccessoriesMenu />
+
       <Heading text="PRODUCT REVIEWS"/>
       <Heading text="VIDEOS"/>
       <Heading text="IN THE PRESS"/>
