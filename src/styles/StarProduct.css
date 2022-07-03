@@ -3,12 +3,14 @@
    justify-content: center;
    align-items: center;
    margin: 1vmax auto;
+   
 }
 
 .starProduct>div:last-child{
     display: flex;
     flex-wrap: wrap;
     width: 46%;
+    left: 150px;
 }
 
 .starProduct img{
