@@ -34,6 +34,10 @@ function App() {
        <HotAccessories smartDevice={data.hotAccessories.smartDevice} smartDeviceCover={data.hotAccessoriesCover.smartDevice}  />
        </Route>
 
+      
+       <Route exact path="/home">
+       <HotAccessories home={data.hotAccessories.home} homeCover={data.hotAccessoriesCover.home}  />
+       </Route>
 
 
 
