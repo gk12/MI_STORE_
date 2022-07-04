@@ -12,7 +12,7 @@ const HotAccessories = ({music,musicCover,smartDevice,smartDeviceCover,home,home
             </div>
             
 
-            {/* -----------2nd */}
+        
             <div>
             {music && music.map((item,index)=>(
              <HotItemCard key={item.image}  name={item.name} price={item.price} image={item.image} index={index}  />
