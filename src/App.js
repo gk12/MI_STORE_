@@ -1,7 +1,7 @@
 import './App.css';
 import PreNavbar from './components/PreNavbar';
 import Navbar from './components/Navbar.js';
-import {BrowserRouter as Router,Route} from 'react-router-dom'
+import {BrowserRouter as Router, Route } from 'react-router-dom'
 import Slider from "./components/Slider.js"
 import data from "./data/data.json"
 import Banner from './components/Banner.js';
@@ -25,14 +25,22 @@ function App() {
 
       <Heading text="HOT ACCESSORIES"/>
       <HotAccessoriesMenu />
-      <Route exact path="/music">
-       <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music}  />
-       </Route>
+      < HotAccessories/>
+      <Route exact path="">
+      <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music}  />
+      </Route>
+
+      
+
+{/* 
+<Route exact path="/smartDevice">
+       <HotAccessories smartDevice={data.hotAccessories.smartDevice} smartDeviceCover={data.hotAccessoriesCover.smartDevice}  />
+       </Route> */}
 
 
-      {/* <Heading text="PRODUCT REVIEWS"/>
+       {/* <Heading text="PRODUCT REVIEWS"/>
       <Heading text="VIDEOS"/>
-      <Heading text="IN THE PRESS"/> */}
+      <Heading text="IN THE PRESS"/>  */}
 
     </Router>
     
