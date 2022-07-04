@@ -48,7 +48,7 @@ function App() {
        <HotAccessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories}  />
        </Route>
 
-
+       <Heading text="PRODUCT REVIEWS"/>
 
 
     </Router>
