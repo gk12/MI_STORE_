@@ -10,6 +10,9 @@ import Heading from './components/Heading.js'
 import StarProduct from './components/StartProduct.js';
 import HotAccessoriesMenu  from "./components/HotAccessoriesMenu.js"
 import HotAccessories from "./components/HotAccessories.js"
+import ProductReviews from "./components/ProductReviews.js"
+import Videos from "./components/Videos.js"
+
 
 function App() {
   return (
@@ -49,8 +52,11 @@ function App() {
        </Route>
 
        <Heading text="PRODUCT REVIEWS"/>
+       <ProductReviews productReviews={data.productReviews}/>
 
-
+       <Heading text="VIDEOS" />
+      
+      <Videos videos={data.videos} />
     </Router>
     
     
