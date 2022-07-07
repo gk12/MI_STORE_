@@ -1,19 +1,19 @@
-import './App.css';
-import PreNavbar from './components/PreNavbar';
-import Navbar from './components/Navbar.js';
+import "./App.css";
+import PreNavbar from "./components/PreNavbar.js"
+import Navbar from "./components/Navbar.js"
 import {BrowserRouter as Router, Route } from 'react-router-dom'
 import Slider from "./components/Slider.js"
 import data from "./data/data.json"
-import Banner from './components/Banner.js';
-import Offers from './components/Offers.js';
-import Heading from './components/Heading.js'
-import StarProduct from './components/StartProduct.js';
+import Banner from "./components/Banner.js"
+import Offers from "./components/Offers.js"
+import Heading from "./components/Heading.js"
+import StarProduct from "./components/StarProduct.js"
 import HotAccessoriesMenu  from "./components/HotAccessoriesMenu.js"
 import HotAccessories from "./components/HotAccessories.js"
 import ProductReviews from "./components/ProductReviews.js"
 import Videos from "./components/Videos.js"
 import Footer from "./components/Footer.js"
-
+import NavOptios from "./components/NavOptios.js"
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
     <Router>
       <PreNavbar/>
       <Navbar/>
+      <NavOptios/>
       <Slider start={data.banner.start}/>
       <Offers offer={data.offer}/>
       <Heading text="STAR PRODUCTS"/>
@@ -29,11 +30,12 @@ function App() {
 
       <Heading text="HOT ACCESSORIES"/>
       <HotAccessoriesMenu />
-      < HotAccessories/>
+      {/* { < HotAccessories/> */}
+   
       <Route exact path="/music">
       <HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music}  />
       </Route>
-
+{/*
       <Route exact path="/smartDevice">
        <HotAccessories smartDevice={data.hotAccessories.smartDevice} smartDeviceCover={data.hotAccessoriesCover.smartDevice}  />
        </Route>
@@ -50,7 +52,7 @@ function App() {
 
        <Route exact path="/mobileAccessories">
        <HotAccessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories}  />
-       </Route>
+       </Route> */}
 
        <Heading text="PRODUCT REVIEWS"/>
        <ProductReviews productReviews={data.productReviews}/>
@@ -60,7 +62,7 @@ function App() {
       <Videos videos={data.videos} />
       <Heading  text="IN THE PRESS"/>
       <Banner  banner={data.banner}/>
-      <Footer footer={data.footer} />
+      <Footer footer={data.footer} /> 
 
     </Router>
     
